@@ -1,0 +1,28 @@
+1) In Yelp_train, F0IhLphIFGtyhzQ2ET69zFw.txt second paragraph: replace .) with ) (actually, in all files remove .) and ..) and ). and so on, no semicolons with points.
+
+2) Remove smiley faces like :))
+
+3) In Ft8T1iFdVjhJoYFzFHjiLzQ.txt fix syntax
+
+4) 
+F4_OyAzfa1z1e_0sDBI0Gfw.txt
+F1P3eCLKdnNkQROzmhgpQ5g.txt
+FsOsOWchd_SnCVkTwVIVLGA.txt
+Fm-kF7UF3nCPO1KxuMFcMdA.txt
+FZve-DlTV3UpGdQ_4FWPMtg.txt
+Fwru6tdmuL9j6F8iD8wWYcA.txt
+​
+punctuation issues in all (last word in the document was not ending with a dot, it did not like it).
+
+5)
+F6N1r7P6EjiuhSvoXogb2kg.txt removed (somehow CODRA doesn't parse it)
+
+
+Yelp_test:
+FJ1PTjZvCGieme_Jo43NvDg.txt - never finishes building the tree
+FJl8Wda1EMHCel1xSeMp4KQ.txt - "----" changed to "-"
+F7SNf-EY_bbE2Md4BOiS-iQ.txt - codra didn't parse for some reason, edu empty
+F72CJH5x4iQZIEH-INl6rgw.txt - same as above
+
+wsj:
+Deleted 1410, 1411 - hung on it
