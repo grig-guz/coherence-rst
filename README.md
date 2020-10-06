@@ -3,13 +3,13 @@
 This repository contains the code for "Neural RST-based Evaluation of Discourse Coherence" by Grigorii Guz, Peyman Bateni, Darius Muglich, and Prof. Guiseppe Carenini. The paper has been accepted to and will be presented at AACL-IJCNLP 2021. For a preprint ArXiv copy of the paper, please visit https://arxiv.org/pdf/2009.14463.pdf.
 
 ## Package Requirements
-TODO
+You can easily replicate our enviroment along with the required dependencies using ```conda create --name <env> --file requirements.txt```. All dependencies and corresponding versions have been provided in ```requirements.txt```
 
 ## Compute Requirements
 The results reported in the paper were trained using 5 CPU-nodes and 30Gb of RAM. However, much lower compute power should also be sufficient when training as we also experiments on local machines with less that 16Gb of RAM. Note that there are no GPU requirements.
 
 ## Setup & Training/Testing
-Our installation process is the same as CNAPS:
+0. Setup and activate the working environment according to the instruction under Package Requirements.
 1. Clone or download this repository.
 2. Set up glove embeddings by running ```bash process_glove.sh```. This will download the appropriate embeddings from http://nlp.stanford.edu/data/glove.42B.300d.zip and then, it will itself run -u train_grammarly.py --model_name ens_tree_only --run_id 0 --lr 0.0001 --num_epochs 2 --embed_dim 50 --glove_dim 300 --hidden_dim 100. Depending on your download and compute speed, this step should take between 30 minutes to 4 hours.
 2. Request permission and download the GCDC dataset from https://github.com/aylai/GCDC-corpus. Upon email confirmation of access to the GCDC dataset, please reach out to any of the first-authors of this paper via email to recieve the RST-parsed dataset, which we will happily provide for you. Note that this RST-parsing has been very computationally intensive, having used multiple AWS EC2 instances over the span of a week. If you are familiar with the CODRA parser, and would like to perform this parsing yourself, we've provided both example fixing and parsing scripts under the ```dataset``` folder. We can provide additional intructions for doing so if viewers are interested (please open an issue :D). Otherwise, we will provide the already parsed examples.
