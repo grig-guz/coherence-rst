@@ -32,7 +32,6 @@ class TreeRecursiveNN(nn.Module):
         self.Uupdate_r = nn.Linear(hidden_size, hidden_size, bias=False)
 
         self.tree2scores = nn.Linear(hidden_size * 2, 3, bias=True)
-        self.edu_gru = nn.GRU(embed_size, embed_size, num_layers=1, batch_first=True)
 
     def forward(self, input_tree):
         root_hidden_output = self.forward_recurse(input_tree)
