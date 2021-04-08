@@ -48,14 +48,21 @@ The results reported in the paper were trained using 5 CPU-nodes and 30Gb of RAM
 | ens_tree_nuc | 51.90±0.22 | 44.76±0.14 | 45.48±0.22 | 43.83±0.13 | 46.49±0.10 |
 | ens_tree_rels | 52.42±0.19 | 44.69±0.15 | 46.88±0.17 | 43.94±0.09 | 46.98±0.09 |
 
-## Citing this repository/paper (ArXiv version)
+## Citing this repository/paper
 ```
-@misc{guz2020neural,
-      title={Neural RST-based Evaluation of Discourse Coherence}, 
-      author={Grigorii Guz and Peyman Bateni and Darius Muglich and Giuseppe Carenini},
-      year={2020},
-      eprint={2009.14463},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{guz-etal-2020-neural,
+    title = "Neural {RST}-based Evaluation of Discourse Coherence",
+    author = "Guz, Grigorii  and
+      Bateni, Peyman  and
+      Muglich, Darius  and
+      Carenini, Giuseppe",
+    booktitle = "Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing",
+    month = dec,
+    year = "2020",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.aacl-main.67",
+    pages = "664--671",
+    abstract = "This paper evaluates the utility of Rhetorical Structure Theory (RST) trees and relations in discourse coherence evaluation. We show that incorporating silver-standard RST features can increase accuracy when classifying coherence. We demonstrate this through our tree-recursive neural model, namely RST-Recursive, which takes advantage of the text{'}s RST features produced by a state of the art RST parser. We evaluate our approach on the Grammarly Corpus for Discourse Coherence (GCDC) and show that when ensembled with the current state of the art, we can achieve the new state of the art accuracy on this benchmark. Furthermore, when deployed alone, RST-Recursive achieves competitive accuracy while having 62{\%} fewer parameters.",
 }
 ```
