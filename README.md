@@ -1,6 +1,9 @@
 # Neural RST-based Evaluation of Discourse Coherence
 
-This repository contains the code for "Neural RST-based Evaluation of Discourse Coherence" by Grigorii Guz, Peyman Bateni, Darius Muglich, and Prof. Guiseppe Carenini. The paper has been accepted to and will be presented at AACL-IJCNLP 2021. For a preprint ArXiv copy of the paper, please visit https://arxiv.org/pdf/2009.14463.pdf.
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/neural-rst-based-evaluation-of-discourse/coherence-evaluation-on-gcdc-rst-accuracy)](https://paperswithcode.com/sota/coherence-evaluation-on-gcdc-rst-accuracy?p=neural-rst-based-evaluation-of-discourse)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/neural-rst-based-evaluation-of-discourse/coherence-evaluation-on-gcdc-rst-f1)](https://paperswithcode.com/sota/coherence-evaluation-on-gcdc-rst-f1?p=neural-rst-based-evaluation-of-discourse)
+
+This repository contains the code for "Neural RST-based Evaluation of Discourse Coherence" by Grigorii Guz, Peyman Bateni, Darius Muglich, and Prof. Guiseppe Carenini. The paper was presented presented at AACL-IJCNLP 2021. For a PDF copy of the paper, please visit https://www.aclweb.org/anthology/2020.aacl-main.67/ or our ArXiv copy at https://arxiv.org/pdf/2009.14463.pdf.
 
 ## Package Requirements
 You can easily replicate our enviroment along with the required dependencies using ```conda create --name <env> --file requirements.txt```. All dependencies and corresponding versions have been provided in ```requirements.txt```
@@ -47,6 +50,10 @@ The results reported in the paper were trained using 5 CPU-nodes and 30Gb of RAM
 | ens_tree_only | 52.35±0.22 | 44.92±0.16 | 45.48±0.22 | 43.70±0.11 | 46.61±0.11 |
 | ens_tree_nuc | 51.90±0.22 | 44.76±0.14 | 45.48±0.22 | 43.83±0.13 | 46.49±0.10 |
 | ens_tree_rels | 52.42±0.19 | 44.69±0.15 | 46.88±0.17 | 43.94±0.09 | 46.98±0.09 |
+
+## Generating Your Own RST Trees from Examples
+
+To build RST trees for your texts using CODRA, you can use the docker-built container at https://github.com/NLPbox/codra-docker. The repository has instructions on how to set it up and run it on documents of interest. Once you have all your trees, you can run our model using the provided code.
 
 ## Citing this repository/paper
 ```
